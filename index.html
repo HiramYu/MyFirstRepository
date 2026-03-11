@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Trails Map & Mini Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dark Trails: Map + Mini Game</h1>
+      <p>Explore the map, then survive the maze in this Dark Deception-inspired challenge.</p>
+    </header>
+
+    <main>
+      <section class="card map-card">
+        <h2>Google Map Explorer</h2>
+        <p>Pan, zoom, and inspect the world before entering the nightmare maze.</p>
+        <div class="map-wrapper">
+          <iframe
+            title="Google Map"
+            src="https://www.google.com/maps?q=Times+Square+New+York&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="card game-card">
+        <h2>Mini Dark Maze</h2>
+        <p>
+          Controls: <strong>WASD</strong> or <strong>Arrow Keys</strong>. Collect all soul shards and avoid
+          the shadow monsters.
+        </p>
+        <div class="hud">
+          <span id="status">Collect all shards!</span>
+          <span id="score">Shards: 0 / 0</span>
+        </div>
+        <canvas id="gameCanvas" width="640" height="384" aria-label="Mini dark maze game"></canvas>
+        <button id="restartBtn" type="button">Restart Game</button>
+      </section>
+    </main>
+
+    <footer>
+      <small>Fan-made experience inspired by arcade maze survival gameplay.</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
